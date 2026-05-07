@@ -34,72 +34,72 @@ Every icon follows the same strict rules for visual consistency:
 ### 🧭 Core Navigation & Interface
 | Icon | File |
 |---|---|
-| menu | `icons/menu.svg` |
-| x (close) | `icons/x.svg` |
-| chevron-left | `icons/chevron-left.svg` |
-| chevron-right | `icons/chevron-right.svg` |
-| chevron-down | `icons/chevron-down.svg` |
-| search | `icons/search.svg` |
-| home | `icons/home.svg` |
-| settings | `icons/settings.svg` |
-| more-vertical | `icons/more-vertical.svg` |
-| more-horizontal | `icons/more-horizontal.svg` |
+| menu | `src/icons/menu.svg` |
+| x (close) | `src/icons/x.svg` |
+| chevron-left | `src/icons/chevron-left.svg` |
+| chevron-right | `src/icons/chevron-right.svg` |
+| chevron-down | `src/icons/chevron-down.svg` |
+| search | `src/icons/search.svg` |
+| home | `src/icons/home.svg` |
+| settings | `src/icons/settings.svg` |
+| more-vertical | `src/icons/more-vertical.svg` |
+| more-horizontal | `src/icons/more-horizontal.svg` |
 
 ### 🛒 E-commerce & Actions
 | Icon | File |
 |---|---|
-| shopping-bag | `icons/shopping-bag.svg` |
-| shopping-cart | `icons/shopping-cart.svg` |
-| heart | `icons/heart.svg` |
-| star | `icons/star.svg` |
-| share | `icons/share.svg` |
-| plus | `icons/plus.svg` |
-| trash | `icons/trash.svg` |
-| edit | `icons/edit.svg` |
-| filter | `icons/filter.svg` |
-| bell | `icons/bell.svg` |
+| shopping-bag | `src/icons/shopping-bag.svg` |
+| shopping-cart | `src/icons/shopping-cart.svg` |
+| heart | `src/icons/heart.svg` |
+| star | `src/icons/star.svg` |
+| share | `src/icons/share.svg` |
+| plus | `src/icons/plus.svg` |
+| trash | `src/icons/trash.svg` |
+| edit | `src/icons/edit.svg` |
+| filter | `src/icons/filter.svg` |
+| bell | `src/icons/bell.svg` |
 
 ### 👤 User & Social
 | Icon | File |
 |---|---|
-| user | `icons/user.svg` |
-| users | `icons/users.svg` |
-| user-circle | `icons/user-circle.svg` |
-| lock | `icons/lock.svg` |
-| unlock | `icons/unlock.svg` |
-| log-in | `icons/log-in.svg` |
-| log-out | `icons/log-out.svg` |
-| key | `icons/key.svg` |
+| user | `src/icons/user.svg` |
+| users | `src/icons/users.svg` |
+| user-circle | `src/icons/user-circle.svg` |
+| lock | `src/icons/lock.svg` |
+| unlock | `src/icons/unlock.svg` |
+| log-in | `src/icons/log-in.svg` |
+| log-out | `src/icons/log-out.svg` |
+| key | `src/icons/key.svg` |
 
 ### 📱 Media, Comms & Location
 | Icon | File |
 |---|---|
-| map-pin | `icons/map-pin.svg` |
-| phone | `icons/phone.svg` |
-| mail | `icons/mail.svg` |
-| message-circle | `icons/message-circle.svg` |
-| send | `icons/send.svg` |
-| camera | `icons/camera.svg` |
-| image | `icons/image.svg` |
-| video | `icons/video.svg` |
-| microphone | `icons/microphone.svg` |
-| calendar | `icons/calendar.svg` |
-| link | `icons/link.svg` |
-| external-link | `icons/external-link.svg` |
+| map-pin | `src/icons/map-pin.svg` |
+| phone | `src/icons/phone.svg` |
+| mail | `src/icons/mail.svg` |
+| message-circle | `src/icons/message-circle.svg` |
+| send | `src/icons/send.svg` |
+| camera | `src/icons/camera.svg` |
+| image | `src/icons/image.svg` |
+| video | `src/icons/video.svg` |
+| microphone | `src/icons/microphone.svg` |
+| calendar | `src/icons/calendar.svg` |
+| link | `src/icons/link.svg` |
+| external-link | `src/icons/external-link.svg` |
 
 ### ⚙️ System & Tech
 | Icon | File |
 |---|---|
-| check | `icons/check.svg` |
-| alert-circle | `icons/alert-circle.svg` |
-| info | `icons/info.svg` |
-| eye | `icons/eye.svg` |
-| eye-slash | `icons/eye-slash.svg` |
-| download | `icons/download.svg` |
-| upload | `icons/upload.svg` |
-| smartphone | `icons/smartphone.svg` |
-| monitor | `icons/monitor.svg` |
-| rocket | `icons/rocket.svg` |
+| check | `src/icons/check.svg` |
+| alert-circle | `src/icons/alert-circle.svg` |
+| info | `src/icons/info.svg` |
+| eye | `src/icons/eye.svg` |
+| eye-slash | `src/icons/eye-slash.svg` |
+| download | `src/icons/download.svg` |
+| upload | `src/icons/upload.svg` |
+| smartphone | `src/icons/smartphone.svg` |
+| monitor | `src/icons/monitor.svg` |
+| rocket | `src/icons/rocket.svg` |
 
 ---
 
@@ -107,7 +107,7 @@ Every icon follows the same strict rules for visual consistency:
 
 ### Inline SVG
 
-Copy any icon from the `icons/` directory directly into your HTML:
+Copy any icon from the `src/icons/` directory directly into your HTML:
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"

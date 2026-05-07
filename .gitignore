@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+
+# Package artifacts
+*.tgz
+*.zip
+
+# Sub-projects (if they handle their own, we can ignore them here or just ignore common patterns)
+corbit-icons-react/node_modules/
+corbit-icons-react/dist/
+corbit_icons/.dart_tool/
+corbit_icons/build/
