@@ -101,6 +101,13 @@ Every icon follows the same strict rules for visual consistency:
 | monitor | `src/icons/monitor.svg` |
 | rocket | `src/icons/rocket.svg` |
 
+## 📦 Packages
+
+| Package | Purpose | Installation |
+|---|---|---|
+| **corbit-icons** | Core SVG metadata (Any framework) | `npm install corbit-icons` |
+| **corbit_icons** | Flutter Icons | `flutter pub add corbit_icons` |
+
 ---
 
 ## 🚀 Usage
