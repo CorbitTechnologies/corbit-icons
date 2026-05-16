@@ -6,7 +6,7 @@ A beautiful, ultra-light open-source icon library by [Corbit Technologies](https
 
 ## ✨ Features
 
-- **50 essential icons** covering navigation, e-commerce, user, media, and system categories
+- **390+ essential icons** covering navigation, e-commerce, user, media, and system categories
 - **Ultra-light aesthetic** — `stroke-width="1.25"` for a premium, modern feel
 - **Pure SVG** — no dependencies, works everywhere
 - **`currentColor`** — fully themeable via CSS
@@ -29,7 +29,7 @@ Every icon follows the same strict rules for visual consistency:
 
 ---
 
-## 📦 Icon Set (50 Icons)
+## 📦 Icon Set (390+ Icons)
 
 ### 🧭 Core Navigation & Interface
 | Icon | File |
@@ -107,6 +107,27 @@ Every icon follows the same strict rules for visual consistency:
 |---|---|---|
 | **corbit-icons** | Core SVG metadata (Any framework) | `npm install corbit-icons` |
 | **corbit_icons** | Flutter Icons | `flutter pub add corbit_icons` |
+
+---
+
+## 🛠 Development
+
+This is a monorepo containing both the JS and Flutter packages.
+
+### Commands
+
+| Command | Description |
+|---|---|
+| `npm run build` | Syncs SVGs to JSON, updates the gallery, and generates Flutter Dart code. |
+| `npm run add-icons` | Adds/updates icons in the `packages/core/src/icons` folder. |
+| `npm run cleanup` | Removes placeholder icons. |
+| `npm run slim` | Removes niche/redundant icons to keep the library sharp. |
+
+### Build Process
+
+1. Icons are authored as SVGs in `packages/core/src/icons`.
+2. Running `npm run build` aggregates these into `packages/core/src/icons.json`.
+3. It also synchronizes the icon font and generates the `corbit_icons.dart` library for Flutter automatically.
 
 ---
 

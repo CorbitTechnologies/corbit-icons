@@ -1,0 +1,16 @@
+{
+  "name": "corbit-icons-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "add-icons": "node scripts/create-icons.js",
+    "cleanup": "node scripts/cleanup-placeholders.js",
+    "slim": "node scripts/slim-library.js",
+    "audit": "npm audit --recursive",
+    "prepublishOnly": "npm run build && npm run audit"
+  },
+  "devDependencies": {
+    "fantasticon": "^4.1.0",
+    "svgo": "^4.0.1"
+  }
+}

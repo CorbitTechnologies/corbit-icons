@@ -1,6 +1,6 @@
 {
   "name": "corbit-icons",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Core SVG metadata and utilities for Corbit Icons",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -18,12 +18,18 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "fonts"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "prepublishOnly": "npm run build && npm audit --audit-level=high"
   },
   "devDependencies": {
+    "svgo": "^4.0.1",
     "tsup": "^8.0.2",
     "typescript": "^5.0.0"
   }
