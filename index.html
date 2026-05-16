@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,121 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/corbit-mono@latest/dist/corbit-mono.css">
     <style>
-        body { font-family: 'Corbit Mono', monospace; background-color: #050505; color: #e5e5e5; }
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: #0a0a0a; }
-        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 5px; border: 2px solid #0a0a0a; }
-        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .icon-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .icon-card:hover { background: rgba(59, 130, 246, 0.05); transform: translateY(-4px) scale(1.02); border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2); }
-        .sticky-search { position: sticky; top: 0; z-index: 40; background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-        .copied-toast { animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, fadeOut 0.4s ease-in 2s forwards; }
-        @keyframes slideUp { from { transform: translateY(100%) scale(0.9); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
-        @keyframes fadeOut { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-10px); } }
+        body {
+            font-family: 'Corbit Mono', monospace;
+            background-color: #050505;
+            color: #e5e5e5;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 5px;
+            border: 2px solid #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .icon-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .icon-card:hover {
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateY(-4px) scale(1.02);
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+
+        .sticky-search {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .copied-toast {
+            animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, fadeOut 0.4s ease-in 2s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%) scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
+
 <body class="min-h-screen">
     <header class="pt-24 pb-16 px-6 text-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-8">
+        <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-8">
             <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             Open Source v1.0
         </div>
-        <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white mb-6">Corbit <span class="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">Icons</span></h1>
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">Ultra-light, vibe-coded icons for modern apps. <br> A premium collection of 50+ sharp, professional SVGs.</p>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white mb-6">Corbit <span
+                class="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">Icons</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">Ultra-light, vibe-coded
+            icons for modern apps. <br> A premium collection of 50+ sharp, professional SVGs.</p>
     </header>
 
     <section class="max-w-4xl mx-auto px-6 mb-20">
         <div class="grid md:grid-cols-2 gap-8">
-            <div class="glass rounded-[2rem] p-8 border border-white/5 relative overflow-hidden group hover:bg-white/[0.03] transition-all duration-500">
+            <div
+                class="glass rounded-[2rem] p-8 border border-white/5 relative overflow-hidden group hover:bg-white/[0.03] transition-all duration-500">
                 <h3 class="text-blue-400 font-bold mb-6 flex items-center gap-3">Web (Any Framework)</h3>
-                <div class="bg-neutral-950 rounded-2xl p-5 font-mono text-sm border border-white/5 mb-6 group-hover:border-blue-500/30 transition-all duration-300 shadow-inner">
-                    <code class="text-gray-400"><span class="text-blue-500">$</span> npm install <span class="text-white font-bold">corbit-icons</span></code>
+                <div
+                    class="bg-neutral-950 rounded-2xl p-5 font-mono text-sm border border-white/5 mb-6 group-hover:border-blue-500/30 transition-all duration-300 shadow-inner">
+                    <code
+                        class="text-gray-400"><span class="text-blue-500">$</span> npm install <span class="text-white font-bold">corbit-icons</span></code>
                 </div>
             </div>
-            <div class="glass rounded-[2rem] p-8 border border-white/5 relative overflow-hidden group hover:bg-white/[0.03] transition-all duration-500">
+            <div
+                class="glass rounded-[2rem] p-8 border border-white/5 relative overflow-hidden group hover:bg-white/[0.03] transition-all duration-500">
                 <h3 class="text-indigo-400 font-bold mb-6 flex items-center gap-3">Flutter & Mobile</h3>
-                <div class="bg-neutral-950 rounded-2xl p-5 font-mono text-sm border border-white/5 mb-6 group-hover:border-indigo-500/30 transition-all duration-300 shadow-inner">
-                    <code class="text-gray-400"><span class="text-indigo-500">$</span> flutter pub add <span class="text-white font-bold">corbit_icons</span></code>
+                <div
+                    class="bg-neutral-950 rounded-2xl p-5 font-mono text-sm border border-white/5 mb-6 group-hover:border-indigo-500/30 transition-all duration-300 shadow-inner">
+                    <code
+                        class="text-gray-400"><span class="text-indigo-500">$</span> flutter pub add <span class="text-white font-bold">corbit_icons</span></code>
                 </div>
             </div>
         </div>
@@ -54,25 +131,1729 @@
     <div class="sticky-search py-6 px-6 mb-16">
         <div class="max-w-4xl mx-auto">
             <div class="relative group">
-                <input type="text" id="search-input" placeholder="Search icons..." class="w-full bg-neutral-900/40 border border-neutral-800 rounded-2xl py-5 px-8 pl-14 text-xl focus:outline-none focus:border-blue-500/50 transition-all duration-300">
-                <div class="absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-blue-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="search-input" placeholder="Search icons..."
+                    class="w-full bg-neutral-900/40 border border-neutral-800 rounded-2xl py-5 px-8 pl-14 text-xl focus:outline-none focus:border-blue-500/50 transition-all duration-300">
+                <div
+                    class="absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-blue-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
                 </div>
             </div>
         </div>
     </div>
 
     <main class="max-w-7xl mx-auto px-6 pb-24">
-        <div id="icon-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4"></div>
+        <div id="icon-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        </div>
     </main>
 
     <div id="toast-container" class="fixed bottom-8 right-8 z-50 flex flex-col gap-3"></div>
 
     <script>
-        const iconData = [{"name":"alert-circle","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"/></svg>"},{"name":"bell","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"/><path d=\"M13.73 21a2 2 0 0 1-3.46 0\"/></svg>"},{"name":"calendar","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/></svg>"},{"name":"camera","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z\"/><circle cx=\"12\" cy=\"13\" r=\"4\"/></svg>"},{"name":"check","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg>"},{"name":"chevron-down","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg>"},{"name":"chevron-left","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"15 18 9 12 15 6\"/></svg>"},{"name":"chevron-right","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"9 18 15 12 9 6\"/></svg>"},{"name":"download","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"/></svg>"},{"name":"edit","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7\"/><path d=\"M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z\"/></svg>"},{"name":"external-link","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"/><polyline points=\"15 3 21 3 21 9\"/><line x1=\"10\" y1=\"14\" x2=\"21\" y2=\"3\"/></svg>"},{"name":"eye-slash","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94\"/><path d=\"M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19\"/><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"/><path d=\"M14.12 14.12a3 3 0 1 1-4.24-4.24\"/></svg>"},{"name":"eye","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>"},{"name":"filter","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg>"},{"name":"heart","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/></svg>"},{"name":"home","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10.5z\"/><polyline points=\"9 22 9 13 15 13 15 22\"/></svg>"},{"name":"image","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/><circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"/><polyline points=\"21 15 16 10 5 21\"/></svg>"},{"name":"info","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"8\" x2=\"12.01\" y2=\"8\"/></svg>"},{"name":"key","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4\"/></svg>"},{"name":"link","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/></svg>"},{"name":"lock","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>"},{"name":"log-in","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4\"/><polyline points=\"10 17 15 12 10 7\"/><line x1=\"15\" y1=\"12\" x2=\"3\" y2=\"12\"/></svg>"},{"name":"log-out","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"/><polyline points=\"16 17 21 12 16 7\"/><line x1=\"21\" y1=\"12\" x2=\"9\" y2=\"12\"/></svg>"},{"name":"mail","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><polyline points=\"22 6 12 13 2 6\"/></svg>"},{"name":"map-pin","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>"},{"name":"menu","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"3\" y1=\"7\" x2=\"21\" y2=\"7\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/><line x1=\"3\" y1=\"17\" x2=\"21\" y2=\"17\"/></svg>"},{"name":"message-circle","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"/></svg>"},{"name":"microphone","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z\"/><path d=\"M19 10v2a7 7 0 0 1-14 0v-2\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"/><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"/></svg>"},{"name":"monitor","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"/><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"/><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"/></svg>"},{"name":"more-horizontal","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"5\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"19\" cy=\"12\" r=\"1\"/></svg>"},{"name":"more-vertical","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"5\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><circle cx=\"12\" cy=\"19\" r=\"1\"/></svg>"},{"name":"phone","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.33 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>"},{"name":"plus","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"/><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/></svg>"},{"name":"rocket","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z\"/><path d=\"M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z\"/><path d=\"M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0\"/><path d=\"M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5\"/></svg>"},{"name":"search","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><line x1=\"16.5\" y1=\"16.5\" x2=\"21\" y2=\"21\"/></svg>"},{"name":"send","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"/><polygon points=\"22 2 15 22 11 13 2 9 22 2\"/></svg>"},{"name":"settings","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41\"/></svg>"},{"name":"share","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"12\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><line x1=\"8.59\" y1=\"13.51\" x2=\"15.42\" y2=\"17.49\"/><line x1=\"15.41\" y1=\"6.51\" x2=\"8.59\" y2=\"10.49\"/></svg>"},{"name":"shopping-bag","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"/><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"/><path d=\"M16 10a4 4 0 0 1-8 0\"/></svg>"},{"name":"shopping-cart","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"21\" r=\"1\"/><circle cx=\"20\" cy=\"21\" r=\"1\"/><path d=\"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\"/></svg>"},{"name":"smartphone","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"/><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"/></svg>"},{"name":"star","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/></svg>"},{"name":"trash","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"3 6 5 6 21 6\"/><path d=\"M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6\"/><path d=\"M10 11v6\"/><path d=\"M14 11v6\"/><path d=\"M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2\"/></svg>"},{"name":"unlock","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 9.9-1\"/></svg>"},{"name":"upload","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"17 8 12 3 7 8\"/><line x1=\"12\" y1=\"3\" x2=\"12\" y2=\"15\"/></svg>"},{"name":"user-circle","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/><circle cx=\"12\" cy=\"12\" r=\"10\"/></svg>"},{"name":"user","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>"},{"name":"users","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>"},{"name":"video","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"23 7 16 12 23 17 23 7\"/><rect x=\"1\" y=\"5\" width=\"15\" height=\"14\" rx=\"2\" ry=\"2\"/></svg>"},{"name":"x","svg":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>"}];
+        const iconData = [
+  {
+    name: 'account-balance',
+    svg: `<path d="M3 22h18"/><path d="M6 9v7"/><path d="M10 9v7"/><path d="M14 9v7"/><path d="M18 9v7"/><path d="M3 9l9-7 9 7"/>`
+  },
+  {
+    name: 'account-balance-wallet',
+    svg: `<path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><rect x="14" y="11" width="8" height="6" rx="2"/>`
+  },
+  {
+    name: 'activity',
+    svg: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`
+  },
+  {
+    name: 'add-a-photo',
+    svg: `<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/><path d="M12 9v8"/><path d="M8 13h8"/>`
+  },
+  {
+    name: 'add-alert',
+    svg: `<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/><path d="M12 9v6"/><path d="M9 12h6"/>`
+  },
+  {
+    name: 'add-box',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/>`
+  },
+  {
+    name: 'add-business',
+    svg: `<path d="M4 22V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18"/><path d="M9 22v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/><path d="M12 7v4"/><path d="M10 9h4"/>`
+  },
+  {
+    name: 'add-card',
+    svg: `<rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/><path d="M12 13v4"/><path d="M10 15h4"/>`
+  },
+  {
+    name: 'add-chart',
+    svg: `<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><path d="M18 4v4"/><path d="M16 6h4"/>`
+  },
+  {
+    name: 'add-comment',
+    svg: `<path d="M21 11.5a8.4 8.4 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/><path d="M12 7v6"/><path d="M9 10h6"/>`
+  },
+  {
+    name: 'add-link',
+    svg: `<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/><path d="M18 18v4"/><path d="M16 20h4"/>`
+  },
+  {
+    name: 'add-location',
+    svg: `<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/><path d="M12 7v6"/><path d="M9 10h6"/>`
+  },
+  {
+    name: 'add-moderator',
+    svg: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v6"/><path d="M9 11h6"/>`
+  },
+  {
+    name: 'add-photo-alternate',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/><path d="M14 5v4"/><path d="M12 7h4"/>`
+  },
+  {
+    name: 'add-reaction',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9v0"/><path d="M15 9v0"/><path d="M19 5v4"/><path d="M17 7h4"/>`
+  },
+  {
+    name: 'add-road',
+    svg: `<path d="M4 22V2h16v20"/><path d="M12 18v4"/><path d="M12 12v4"/><path d="M12 6v4"/><path d="M18 18v4"/><path d="M16 20h4"/>`
+  },
+  {
+    name: 'add-shopping-cart',
+    svg: `<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/><path d="M12 8v6"/><path d="M9 11h6"/>`
+  },
+  {
+    name: 'add-task',
+    svg: `<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/><path d="M12 8v6"/><path d="M9 11h6"/>`
+  },
+  {
+    name: 'add-to-drive',
+    svg: `<path d="M2 17l6-10h12l-6 10H2z"/><path d="M22 17v4"/><path d="M20 19h4"/>`
+  },
+  {
+    name: 'add-to-photos',
+    svg: `<rect x="3" y="3" width="14" height="14" rx="2"/><rect x="7" y="7" width="14" height="14" rx="2"/><path d="M14 11v6"/><path d="M11 14h6"/>`
+  },
+  {
+    name: 'add-to-queue',
+    svg: `<rect x="2" y="4" width="20" height="12" rx="2"/><path d="M2 20h20"/><path d="M12 8v4"/><path d="M10 10h4"/>`
+  },
+  {
+    name: 'adjustment',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M12 2v20"/><path d="M12 12l7 7"/>`
+  },
+  {
+    name: 'admin-panel-settings',
+    svg: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/><path d="M12 14v4"/>`
+  },
+  {
+    name: 'ads-click',
+    svg: `<path d="M12 12l8 8"/><circle cx="12" cy="12" r="10"/><path d="M20 12h2"/><path d="M12 20v2"/>`
+  },
+  {
+    name: 'agriculture',
+    svg: `<path d="M5 22h14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M4 10l3-4h10l3 4v6H4v-6z"/>`
+  },
+  {
+    name: 'air',
+    svg: `<path d="M2 12h10c2 0 3-1 3-3s-1-3-3-3"/><path d="M2 16h15c2 0 3 1 3 3s-1 3-3 3"/><path d="M2 8h5c2 0 3-1 3-3s-1-3-3-3"/>`
+  },
+  {
+    name: 'airline-seat-flat',
+    svg: `<path d="M2 19h15"/><path d="M5 15h12"/><path d="M2 11h3v4H2z"/><path d="M19 15h3v4h-3z"/>`
+  },
+  {
+    name: 'airline-seat-individual-suite',
+    svg: `<path d="M2 19h15"/><path d="M5 15h12"/><path d="M2 11h3v4H2z"/><circle cx="11" cy="11" r="2"/>`
+  },
+  {
+    name: 'airplane',
+    svg: `<path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5S19 4 17.5 5.5L14 9l-8.2-1.8L3 10.5l6.5 3.5L13 21l3.5-1.8z"/>`
+  },
+  {
+    name: 'airplane-ticket',
+    svg: `<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"/><path d="M9 12l3-3 5 5-2 2-3-3-3 3-2-2z"/>`
+  },
+  {
+    name: 'airplanemode-active',
+    svg: `<path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5S19 4 17.5 5.5L14 9l-8.2-1.8L3 10.5l6.5 3.5L13 21l3.5-1.8z"/>`
+  },
+  {
+    name: 'airplanemode-inactive',
+    svg: `<path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5S19 4 17.5 5.5L14 9l-8.2-1.8L3 10.5l6.5 3.5L13 21l3.5-1.8z"/><line x1="1" y1="1" x2="23" y2="23"/>`
+  },
+  {
+    name: 'airplay',
+    svg: `<rect x="2" y="3" width="20" height="14" rx="2"/><polygon points="12 17 16 21 8 21 12 17"/>`
+  },
+  {
+    name: 'airport-shuttle',
+    svg: `<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 14h20"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M6 6v8"/><path d="M14 6v8"/>`
+  },
+  {
+    name: 'alarm',
+    svg: `<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3L2 6"/><path d="M19 3l3 3"/><path d="M6.38 18.72l-.79.78"/><path d="M17.62 18.72l.79.78"/>`
+  },
+  {
+    name: 'alarms',
+    svg: `<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3L2 6"/><path d="M19 3l3 3"/>`
+  },
+  {
+    name: 'album',
+    svg: `<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 10 10"/>`
+  },
+  {
+    name: 'alert-circle',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <line x1="12" y1="8" x2="12" y2="12"/>
+  <line x1="12" y1="16" x2="12.01" y2="16"/>`
+  },
+  {
+    name: 'align-center',
+    svg: `<line x1="18" y1="10" x2="6" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="18" y1="18" x2="6" y2="18"/>`
+  },
+  {
+    name: 'align-horizontal-center',
+    svg: `<rect x="6" y="7" width="12" height="10" rx="2"/><path d="M12 2v20"/>`
+  },
+  {
+    name: 'align-horizontal-left',
+    svg: `<rect x="6" y="7" width="12" height="10" rx="2"/><path d="M2 2v20"/>`
+  },
+  {
+    name: 'align-horizontal-right',
+    svg: `<rect x="6" y="7" width="12" height="10" rx="2"/><path d="M22 2v20"/>`
+  },
+  {
+    name: 'align-left',
+    svg: `<line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/>`
+  },
+  {
+    name: 'align-right',
+    svg: `<line x1="21" y1="10" x2="7" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="21" y1="18" x2="7" y2="18"/>`
+  },
+  {
+    name: 'align-vertical-bottom',
+    svg: `<rect x="7" y="6" width="10" height="12" rx="2"/><path d="M2 22h20"/>`
+  },
+  {
+    name: 'align-vertical-center',
+    svg: `<rect x="7" y="6" width="10" height="12" rx="2"/><path d="M2 12h20"/>`
+  },
+  {
+    name: 'align-vertical-top',
+    svg: `<rect x="7" y="6" width="10" height="12" rx="2"/><path d="M2 2h20"/>`
+  },
+  {
+    name: 'android',
+    svg: `<path d="M4 9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9z"/><path d="M7 8V5a2 2 0 0 1 4 0v3"/><path d="M13 8V5a2 2 0 0 1 4 0v3"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/>`
+  },
+  {
+    name: 'app-registration',
+    svg: `<rect x="2" y="3" width="14" height="18" rx="2"/><path d="M16 8h6"/><path d="M16 12h6"/><path d="M16 16h6"/>`
+  },
+  {
+    name: 'app-store',
+    svg: `<path d="M12 2L2 19h20L12 2z"/><path d="M12 8l-5 9h10l-5-9z"/>`
+  },
+  {
+    name: 'archive',
+    svg: `<polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/>`
+  },
+  {
+    name: 'arrow-down',
+    svg: `<line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>`
+  },
+  {
+    name: 'arrow-down-circle',
+    svg: `<circle cx="12" cy="12" r="10"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/>`
+  },
+  {
+    name: 'arrow-down-left',
+    svg: `<line x1="17" y1="7" x2="7" y2="17"/><polyline points="7 7 7 17 17 17"/>`
+  },
+  {
+    name: 'arrow-down-right',
+    svg: `<line x1="7" y1="7" x2="17" y2="17"/><polyline points="17 7 17 17 7 17"/>`
+  },
+  {
+    name: 'arrow-left-circle',
+    svg: `<circle cx="12" cy="12" r="10"/><polyline points="12 8 8 12 12 16"/><line x1="16" y1="12" x2="8" y2="12"/>`
+  },
+  {
+    name: 'arrow-right-circle',
+    svg: `<circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" y1="12" x2="16" y2="12"/>`
+  },
+  {
+    name: 'arrow-up',
+    svg: `<line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>`
+  },
+  {
+    name: 'arrow-up-circle',
+    svg: `<circle cx="12" cy="12" r="10"/><polyline points="16 12 12 8 8 12"/><line x1="12" y1="16" x2="12" y2="8"/>`
+  },
+  {
+    name: 'arrow-up-left',
+    svg: `<line x1="17" y1="17" x2="7" y2="7"/><polyline points="17 7 7 7 7 17"/>`
+  },
+  {
+    name: 'arrow-up-right',
+    svg: `<line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>`
+  },
+  {
+    name: 'article',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h6"/>`
+  },
+  {
+    name: 'attachment',
+    svg: `<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>`
+  },
+  {
+    name: 'backspace',
+    svg: `<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/>`
+  },
+  {
+    name: 'badge-check',
+    svg: `<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><polyline points="9 12 11 14 15 10"/>`
+  },
+  {
+    name: 'banknote',
+    svg: `<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/>`
+  },
+  {
+    name: 'barcode',
+    svg: `<path d="M3 5v14M21 5v14M7 5v14M11 5v14M14 5v14M17 5v14"/>`
+  },
+  {
+    name: 'basket',
+    svg: `<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>`
+  },
+  {
+    name: 'battery',
+    svg: `<rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/>`
+  },
+  {
+    name: 'battery-charging',
+    svg: `<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="11 6 7 12 13 12 9 18"/>`
+  },
+  {
+    name: 'bell',
+    svg: `<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+  <path d="M13.73 21a2 2 0 0 1-3.46 0"/>`
+  },
+  {
+    name: 'bell-off',
+    svg: `<path d="M13.73 21a2 2 0 0 1-3.46 0"/><path d="M18.63 13A17.89 17.89 0 0 1 18 8"/><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"/><line x1="1" y1="1" x2="23" y2="23"/>`
+  },
+  {
+    name: 'block',
+    svg: `<circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>`
+  },
+  {
+    name: 'bluetooth',
+    svg: `<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/>`
+  },
+  {
+    name: 'bold',
+    svg: `<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/>`
+  },
+  {
+    name: 'bolt',
+    svg: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>`
+  },
+  {
+    name: 'book',
+    svg: `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`
+  },
+  {
+    name: 'book-open',
+    svg: `<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>`
+  },
+  {
+    name: 'bookmark',
+    svg: `<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>`
+  },
+  {
+    name: 'bookmark-check',
+    svg: `<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><polyline points="9 10 11 12 15 8"/>`
+  },
+  {
+    name: 'border-all',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/>`
+  },
+  {
+    name: 'border-bottom',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2"/><path d="M3 21h18"/>`
+  },
+  {
+    name: 'border-left',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2"/><path d="M3 3v18"/>`
+  },
+  {
+    name: 'border-right',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2"/><path d="M21 3v18"/>`
+  },
+  {
+    name: 'border-top',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2"/><path d="M3 3h18"/>`
+  },
+  {
+    name: 'box',
+    svg: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
+  },
+  {
+    name: 'box-open',
+    svg: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
+  },
+  {
+    name: 'branch',
+    svg: `<line x1="6" y1="3" x2="6" y2="15"/>
+  <circle cx="18" cy="6" r="3"/>
+  <circle cx="6" cy="18" r="3"/>
+  <path d="M18 9a9 9 0 0 1-9 9"/>`
+  },
+  {
+    name: 'briefcase',
+    svg: `<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`
+  },
+  {
+    name: 'brightness-high',
+    svg: `<circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.2 4.2l1.4 1.4"/><path d="M18.4 18.4l1.4 1.4"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.2 19.8l1.4-1.4"/><path d="M18.4 5.6l1.4-1.4"/>`
+  },
+  {
+    name: 'brightness-low',
+    svg: `<circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M1 12h2"/><path d="M21 12h2"/>`
+  },
+  {
+    name: 'brush',
+    svg: `<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l5 2"/><path d="M3 5L2 2"/>`
+  },
+  {
+    name: 'bug',
+    svg: `<rect x="8" y="7" width="8" height="10" rx="4"/><path d="M12 7V3"/><path d="M6 13H2"/><path d="M18 13h4"/><path d="M12 17v4"/><path d="M6 7l-4-4"/><path d="M18 7l4-4"/><path d="M6 17l-4 4"/><path d="M18 17l4 4"/>`
+  },
+  {
+    name: 'building',
+    svg: `<rect x="4" y="22" width="16" height="0"/><path d="M4 22V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18"/><line x1="9" y1="22" x2="9" y2="22"/><line x1="15" y1="22" x2="15" y2="22"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="8" y2="18"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="16" y1="18" x2="16" y2="18"/>`
+  },
+  {
+    name: 'building-2',
+    svg: `<path d="M4 22V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18"/><path d="M9 22v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/>`
+  },
+  {
+    name: 'bus',
+    svg: `<rect x="4" y="6" width="16" height="12" rx="2"/><line x1="4" y1="14" x2="20" y2="14"/><line x1="8" y1="6" x2="8" y2="14"/><line x1="16" y1="6" x2="16" y2="14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>`
+  },
+  {
+    name: 'cake',
+    svg: `<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s2-2 4-2 4 2 4 2 2-2 4-2 4 2 4 2"/><path d="M12 11V7"/><path d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>`
+  },
+  {
+    name: 'calculator',
+    svg: `<rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="16" y1="18" x2="16" y2="18"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="8" y1="18" x2="8" y2="18"/>`
+  },
+  {
+    name: 'calendar',
+    svg: `<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>`
+  },
+  {
+    name: 'camera',
+    svg: `<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+  <circle cx="12" cy="13" r="4"/>`
+  },
+  {
+    name: 'castle',
+    svg: `<path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z"/><path d="M18 11V4H6v7"/><path d="M15 11V8h-6v3"/><path d="M12 22v-4"/><path d="M18 4h3V2h-3v2zM6 4H3V2h3v2z"/>`
+  },
+  {
+    name: 'chart-bar',
+    svg: `<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>`
+  },
+  {
+    name: 'chart-line',
+    svg: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`
+  },
+  {
+    name: 'chart-pie',
+    svg: `<path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>`
+  },
+  {
+    name: 'check',
+    svg: `<polyline points="20 6 9 17 4 12"/>`
+  },
+  {
+    name: 'check-circle',
+    svg: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>`
+  },
+  {
+    name: 'check-square',
+    svg: `<polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>`
+  },
+  {
+    name: 'chevron-down',
+    svg: `<polyline points="6 9 12 15 18 9"/>`
+  },
+  {
+    name: 'chevron-left',
+    svg: `<polyline points="15 18 9 12 15 6"/>`
+  },
+  {
+    name: 'chevron-right',
+    svg: `<polyline points="9 18 15 12 9 6"/>`
+  },
+  {
+    name: 'chevron-up',
+    svg: `<polyline points="18 15 12 9 6 15"/>`
+  },
+  {
+    name: 'chevrons-down',
+    svg: `<polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/>`
+  },
+  {
+    name: 'chevrons-left',
+    svg: `<polyline points="11 17 6 12 11 7"/><polyline points="18 17 13 12 18 7"/>`
+  },
+  {
+    name: 'chevrons-right',
+    svg: `<polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/>`
+  },
+  {
+    name: 'chevrons-up',
+    svg: `<polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/>`
+  },
+  {
+    name: 'circle-dot',
+    svg: `<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>`
+  },
+  {
+    name: 'clap',
+    svg: `<path d="M18 10V4a2 2 0 0 0-4 0v6M14 10V2a2 2 0 0 0-4 0v8M10 10V3a2 2 0 0 0-4 0v9M6 13V9a2 2 0 0 0-4 0v10a7 7 0 0 0 14 0v-4"/><path d="M18 15a2 2 0 0 0 4 0v-5a2 2 0 0 0-4 0v5z"/>`
+  },
+  {
+    name: 'clipboard',
+    svg: `<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>`
+  },
+  {
+    name: 'clipboard-check',
+    svg: `<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><polyline points="9 14 11 16 15 12"/>`
+  },
+  {
+    name: 'clipboard-list',
+    svg: `<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/>`
+  },
+  {
+    name: 'clock',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 16 14"/>`
+  },
+  {
+    name: 'cloud',
+    svg: `<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>`
+  },
+  {
+    name: 'cloud-drizzle',
+    svg: `<path d="M8 19l2 2"/><path d="M14 19l2 2"/><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>`
+  },
+  {
+    name: 'cloud-lightning',
+    svg: `<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"/><polyline points="13 11 9 17 15 17 11 23"/>`
+  },
+  {
+    name: 'cloud-rain',
+    svg: `<line x1="16" y1="13" x2="14" y2="21"/><line x1="8" y1="13" x2="6" y2="21"/><line x1="12" y1="15" x2="10" y2="23"/><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/>`
+  },
+  {
+    name: 'cloud-snow',
+    svg: `<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><line x1="8" y1="15" x2="8.01" y2="15"/><line x1="12" y1="15" x2="12.01" y2="15"/><line x1="16" y1="15" x2="16.01" y2="15"/><line x1="10" y1="18" x2="10.01" y2="18"/><line x1="14" y1="18" x2="14.01" y2="18"/><line x1="12" y1="21" x2="12.01" y2="21"/>`
+  },
+  {
+    name: 'code',
+    svg: `<polyline points="16 18 22 12 16 6"/>
+  <polyline points="8 6 2 12 8 18"/>`
+  },
+  {
+    name: 'coffee',
+    svg: `<path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>`
+  },
+  {
+    name: 'coins',
+    svg: `<circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18.1"/>`
+  },
+  {
+    name: 'collections-bookmark',
+    svg: `<path d="M4 6v14a2 2 0 0 0 2 2h14"/><path d="M9 2h8v10l-4-3-4 3V2z"/><rect x="9" y="2" width="12" height="14" rx="2"/>`
+  },
+  {
+    name: 'columns',
+    svg: `<path d="M12 3v18"/><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>`
+  },
+  {
+    name: 'commit',
+    svg: `<circle cx="12" cy="12" r="4"/>
+  <line x1="12" y1="3" x2="12" y2="8"/>
+  <line x1="12" y1="16" x2="12" y2="21"/>`
+  },
+  {
+    name: 'compass',
+    svg: `<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>`
+  },
+  {
+    name: 'computer',
+    svg: `<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>`
+  },
+  {
+    name: 'contact',
+    svg: `<path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="10" r="3"/><line x1="8" y1="2" x2="8" y2="4"/><line x1="16" y1="2" x2="16" y2="4"/>`
+  },
+  {
+    name: 'content-copy',
+    svg: `<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>`
+  },
+  {
+    name: 'content-cut',
+    svg: `<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.1" y2="15.9"/><line x1="8.1" y1="8.1" x2="20" y2="20"/>`
+  },
+  {
+    name: 'content-paste-go',
+    svg: `<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><polyline points="10 14 12 16 10 18"/>`
+  },
+  {
+    name: 'contrast',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/>`
+  },
+  {
+    name: 'cookie',
+    svg: `<path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5z"/><path d="M8.5 8.5v.01"/><path d="M11 12v.01"/><path d="M7 13v.01"/><path d="M14 15v.01"/><path d="M10 16v.01"/>`
+  },
+  {
+    name: 'copy',
+    svg: `<rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>`
+  },
+  {
+    name: 'copy-all',
+    svg: `<rect x="7" y="7" width="11" height="11" rx="2"/><rect x="3" y="3" width="11" height="11" rx="2"/><path d="M11 11v7a2 2 0 0 0 2 2h7"/>`
+  },
+  {
+    name: 'copyright',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M14.5 9.2c-0.5-0.5-1.2-0.8-2-0.8-1.7 0-3 1.3-3 3.1s1.3 3.1 3 3.1c0.8 0 1.5-0.3 2-0.8"/>`
+  },
+  {
+    name: 'cpu',
+    svg: `<rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+  <rect x="9" y="9" width="6" height="6"/>
+  <line x1="9" y1="1" x2="9" y2="4"/>
+  <line x1="15" y1="1" x2="15" y2="4"/>
+  <line x1="9" y1="20" x2="9" y2="23"/>
+  <line x1="15" y1="20" x2="15" y2="23"/>
+  <line x1="20" y1="9" x2="23" y2="9"/>
+  <line x1="20" y1="15" x2="23" y2="15"/>
+  <line x1="1" y1="9" x2="4" y2="9"/>
+  <line x1="1" y1="15" x2="4" y2="15"/>`
+  },
+  {
+    name: 'create-new-folder',
+    svg: `<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>`
+  },
+  {
+    name: 'credit-card',
+    svg: `<rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>`
+  },
+  {
+    name: 'crop',
+    svg: `<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"/><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"/>`
+  },
+  {
+    name: 'crosshair',
+    svg: `<circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/>`
+  },
+  {
+    name: 'crown',
+    svg: `<path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/>`
+  },
+  {
+    name: 'cube',
+    svg: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
+  },
+  {
+    name: 'cup-soda',
+    svg: `<path d="M6 3h12l1 18H5L6 3z"/><line x1="4" y1="8" x2="20" y2="8"/><polyline points="15 3 14 1 12 1 11 3"/>`
+  },
+  {
+    name: 'currency-bitcoin',
+    svg: `<path d="M7 1h2v22H7z"/><path d="M15 1h2v22h-2z"/><path d="M7 6h8a4 4 0 0 1 0 8H7"/><path d="M7 12h9a4 4 0 0 1 0 8H7"/>`
+  },
+  {
+    name: 'currency-exchange',
+    svg: `<path d="M8 3l-4 4 4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/>`
+  },
+  {
+    name: 'currency-franc',
+    svg: `<path d="M6 3v18"/><path d="M6 3h12"/><path d="M6 10h8"/><path d="M6 14h8"/>`
+  },
+  {
+    name: 'currency-lira',
+    svg: `<path d="M6 3v18h6"/><path d="M6 10h10"/><path d="M6 14h10"/><path d="M18 7c0-2-2-4-5-4"/>`
+  },
+  {
+    name: 'currency-pound',
+    svg: `<path d="M18 7c0-2.8-2.2-5-5-5S8 4.2 8 7v10H6v2h12v-2h-8v-3h5v-2h-5V7c0-1.7 1.3-3 3-3s3 1.3 3 3"/>`
+  },
+  {
+    name: 'currency-ruble',
+    svg: `<path d="M8 21V3h5a5 5 0 0 1 0 10H8"/><path d="M6 13h9"/><path d="M6 17h9"/>`
+  },
+  {
+    name: 'currency-rupee',
+    svg: `<path d="M6 3h12"/><path d="M6 8h12"/><path d="M6 13h8.5a4.5 4.5 0 0 0 0-9"/><path d="M14.5 13L6 21"/>`
+  },
+  {
+    name: 'currency-yen',
+    svg: `<path d="M6 3l6 8 6-8"/><path d="M12 11v10"/><path d="M8 13h8"/><path d="M8 17h8"/>`
+  },
+  {
+    name: 'currency-yuan',
+    svg: `<path d="M6 3l6 8 6-8"/><path d="M12 11v10"/><path d="M8 15h8"/>`
+  },
+  {
+    name: 'curtains',
+    svg: `<path d="M3 3h18v18H3z"/><path d="M3 3s4 4 4 18"/><path d="M21 3s-4 4-4 18"/>`
+  },
+  {
+    name: 'curtains-closed',
+    svg: `<path d="M12 3v18"/><path d="M3 3h18v18H3z"/>`
+  },
+  {
+    name: 'dashboard',
+    svg: `<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>`
+  },
+  {
+    name: 'database',
+    svg: `<ellipse cx="12" cy="5" rx="9" ry="3"/>
+  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>`
+  },
+  {
+    name: 'delete',
+    svg: `<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/>`
+  },
+  {
+    name: 'diamond',
+    svg: `<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M11 3L8 9l4 12 4-12-3-6"/><path d="M2 9h20"/>`
+  },
+  {
+    name: 'discord',
+    svg: `<path d="M18.94 4.58C17.51 3.93 15.98 3.47 14.39 3.23a.1.1 0 0 0-.1.05c-.2.36-.43.83-.58 1.19a12.62 12.62 0 0 0-3.42 0c-.15-.36-.39-.83-.6-1.19a.1.1 0 0 0-.1-.05 16.32 16.32 0 0 0-4.55 1.35.08.08 0 0 0-.05.03c-2.91 4.34-3.71 8.57-3.32 12.74.01.03.02.05.04.06 1.92 1.41 3.79 2.27 5.61 2.84a.1.1 0 0 0 .1-.05c.43-.59.81-1.22 1.13-1.89a.1.1 0 0 0-.05-.14c-.62-.23-1.21-.52-1.78-.85a.1.1 0 0 1-.01-.17c.12-.09.24-.18.36-.28a.1.1 0 0 1 .1-.01c3.67 1.68 7.64 1.68 11.27 0a.1.1 0 0 1 .1.01c.12.1.24.19.36.28a.1.1 0 0 1-.01.17c-.57.33-1.16.62-1.78.85a.1.1 0 0 0-.05.14c.32.67.7 1.3 1.13 1.89a.1.1 0 0 0 .1.05c1.82-.57 3.69-1.43 5.61-2.84a.09.09 0 0 0 .04-.06c.46-4.85-.77-9.05-3.32-12.74a.07.07 0 0 0-.05-.03zM9.05 13.52c-.99 0-1.8-1.02-1.8-2.26s.81-2.26 1.8-2.26 1.8 1.02 1.8 2.26-.8 2.26-1.8 2.26zm5.9 0c-.99 0-1.8-1.02-1.8-2.26s.81-2.26 1.8-2.26 1.8 1.02 1.8 2.26-.8 2.26-1.8 2.26z"/>`
+  },
+  {
+    name: 'divide',
+    svg: `<circle cx="12" cy="6" r="2"/><line x1="5" y1="12" x2="19" y2="12"/><circle cx="12" cy="18" r="2"/>`
+  },
+  {
+    name: 'dollar-sign',
+    svg: `<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>`
+  },
+  {
+    name: 'door-open',
+    svg: `<path d="M13 4h3a2 2 0 0 1 2 2v14"/><path d="M2 20h20"/><path d="M13 4v16"/><path d="M10 12v.01"/><path d="M13 4l-9 1v15l9 1V4z"/>`
+  },
+  {
+    name: 'download',
+    svg: `<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+  <polyline points="7 10 12 15 17 10"/>
+  <line x1="12" y1="15" x2="12" y2="3"/>`
+  },
+  {
+    name: 'droplet',
+    svg: `<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>`
+  },
+  {
+    name: 'edit',
+    svg: `<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>`
+  },
+  {
+    name: 'eraser',
+    svg: `<path d="M7 21L2.7 16.7a1 1 0 0 1 0-1.4l10.6-10.6a1 1 0 0 1 1.4 0l4.3 4.3a1 1 0 0 1 0 1.4L8.4 21z"/><path d="M18 13l2.4 2.4a1 1 0 0 1 0 1.4l-3.2 3.2a1 1 0 0 1-1.4 0l-2.4-2.4"/><path d="M5 14h11"/>`
+  },
+  {
+    name: 'euro',
+    svg: `<path d="M20 7a8 8 0 1 0 0 10"/><line x1="4" y1="10" x2="16" y2="10"/><line x1="4" y1="14" x2="16" y2="14"/>`
+  },
+  {
+    name: 'expand',
+    svg: `<polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>`
+  },
+  {
+    name: 'external-link',
+    svg: `<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+  <polyline points="15 3 21 3 21 9"/>
+  <line x1="10" y1="14" x2="21" y2="3"/>`
+  },
+  {
+    name: 'eye',
+    svg: `<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+  <circle cx="12" cy="12" r="3"/>`
+  },
+  {
+    name: 'eye-off',
+    svg: `<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>`
+  },
+  {
+    name: 'eye-slash',
+    svg: `<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+  <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+  <line x1="1" y1="1" x2="23" y2="23"/>
+  <path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/>`
+  },
+  {
+    name: 'face-id',
+    svg: `<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M7 16a5 5 0 0 1 10 0"/>`
+  },
+  {
+    name: 'facebook',
+    svg: `<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>`
+  },
+  {
+    name: 'fan',
+    svg: `<circle cx="12" cy="12" r="3"/><path d="M12 9c3 0 5-2 5-5s-2-5-5-5-5 2-5 5 2 5 5 5z"/><path d="M12 15c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5z"/><path d="M15 12c0-3 2-5 5-5s5 2 5 5-2 5-5 5-5-2-5-5z"/><path d="M9 12c0 3-2 5-5 5s-5-2-5-5 2-5 5-5 5 2 5 5z"/>`
+  },
+  {
+    name: 'feather',
+    svg: `<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/>`
+  },
+  {
+    name: 'file',
+    svg: `<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+  <polyline points="13 2 13 9 20 9"/>`
+  },
+  {
+    name: 'file-check',
+    svg: `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/>`
+  },
+  {
+    name: 'file-minus',
+    svg: `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/>`
+  },
+  {
+    name: 'file-plus',
+    svg: `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="11" x2="12" y2="19"/><line x1="8" y1="15" x2="16" y2="15"/>`
+  },
+  {
+    name: 'file-search',
+    svg: `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><circle cx="11" cy="14" r="3"/><line x1="13.5" y1="16.5" x2="16" y2="19"/>`
+  },
+  {
+    name: 'film',
+    svg: `<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/>`
+  },
+  {
+    name: 'filter',
+    svg: `<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>`
+  },
+  {
+    name: 'fingerprint',
+    svg: `<path d="M2 12a10 10 0 0 1 10-10"/><path d="M7 15a5 5 0 0 1 5-5"/><path d="M12 12a1 1 0 0 1 1 1"/><path d="M12 22a10 10 0 0 1-10-10"/><path d="M12 17a5 5 0 0 1-5-5"/><path d="M17 12a5 5 0 0 1-5 5"/>`
+  },
+  {
+    name: 'flag',
+    svg: `<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>`
+  },
+  {
+    name: 'flashlight',
+    svg: `<rect x="9" y="11" width="6" height="11" rx="1"/><path d="M8 3h8l1 8H7l1-8z"/><line x1="12" y1="15" x2="12" y2="15"/>`
+  },
+  {
+    name: 'floppy-disk',
+    svg: `<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>`
+  },
+  {
+    name: 'focus',
+    svg: `<circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/>`
+  },
+  {
+    name: 'folder',
+    svg: `<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>`
+  },
+  {
+    name: 'folder-minus',
+    svg: `<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2v11z"/><line x1="9" y1="14" x2="15" y2="14"/>`
+  },
+  {
+    name: 'folder-plus',
+    svg: `<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2v11z"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>`
+  },
+  {
+    name: 'forward',
+    svg: `<polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/>`
+  },
+  {
+    name: 'frame',
+    svg: `<line x1="22" y1="6" x2="2" y2="6"/><line x1="22" y1="18" x2="2" y2="18"/><line x1="6" y1="2" x2="6" y2="22"/><line x1="18" y1="2" x2="18" y2="22"/>`
+  },
+  {
+    name: 'frown',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>`
+  },
+  {
+    name: 'gamepad',
+    svg: `<line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="15.5" cy="15.5" r=".5"/><circle cx="18.5" cy="15.5" r=".5"/><circle cx="17" cy="14" r=".5"/>`
+  },
+  {
+    name: 'gauge',
+    svg: `<path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>`
+  },
+  {
+    name: 'gem',
+    svg: `<path d="M6 3h12l4 6-10 12L2 9z"/><path d="M11 3L8 9l4 12 4-12-3-6"/><path d="M2 9h20"/>`
+  },
+  {
+    name: 'gift',
+    svg: `<polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>`
+  },
+  {
+    name: 'github',
+    svg: `<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A3.37 3.37 0 0 0 18.91 5.41a3.17 3.37 0 0 0-.12-2.38s-.78-.25-2.53.94a11.42 11.42 0 0 0-5.46 0C9.09 1.78 8.31 2.03 8.31 2.03a3.17 3.37 0 0 0-.12 2.38 3.37 3.37 0 0 0-1 2.31c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.58V22"/>`
+  },
+  {
+    name: 'globe',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <line x1="2" y1="12" x2="22" y2="12"/>
+  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>`
+  },
+  {
+    name: 'graduation-cap',
+    svg: `<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/>`
+  },
+  {
+    name: 'grid',
+    svg: `<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>`
+  },
+  {
+    name: 'hammer',
+    svg: `<path d="M18.42 9.59l-8 8a2.12 2.12 0 0 1-3 0l-2-2a2.12 2.12 0 0 1 0-3l8-8"/><path d="M15 8l2 2 5-5-3-3z"/>`
+  },
+  {
+    name: 'handbag',
+    svg: `<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>`
+  },
+  {
+    name: 'hard-drive',
+    svg: `<line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/>`
+  },
+  {
+    name: 'headphones',
+    svg: `<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>`
+  },
+  {
+    name: 'headset',
+    svg: `<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>`
+  },
+  {
+    name: 'heart',
+    svg: `<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>`
+  },
+  {
+    name: 'heart-eyes',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M7 9s.5-2 1.5-2 1.5 2 1.5 2-.5 2-1.5 2-1.5-2-1.5-2z"/><path d="M14 9s.5-2 1.5-2 1.5 2 1.5 2-.5 2-1.5 2-1.5-2-1.5-2z"/><path d="M8 15s1.5 2 4 2 4-2 4-2"/>`
+  },
+  {
+    name: 'help-circle',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+  <line x1="12" y1="17" x2="12.01" y2="17"/>`
+  },
+  {
+    name: 'highlighter',
+    svg: `<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>`
+  },
+  {
+    name: 'history',
+    svg: `<polyline points="12 8 12 12 16 14"/><path d="M3.05 11a9 9 0 1 1 .69 4.91L3 11"/>`
+  },
+  {
+    name: 'home',
+    svg: `<path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10.5z"/>
+  <polyline points="9 22 9 13 15 13 15 22"/>`
+  },
+  {
+    name: 'hospital',
+    svg: `<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 7v10"/><path d="M8 12h8"/>`
+  },
+  {
+    name: 'hourglass',
+    svg: `<path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22c0-4-3-6-3-10s3-6 3-10H7c0 4 3 6 3 10s-3 6-3 10h10z"/>`
+  },
+  {
+    name: 'image',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>`
+  },
+  {
+    name: 'inbox',
+    svg: `<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>`
+  },
+  {
+    name: 'indent',
+    svg: `<polyline points="3 8 7 12 3 16"/><line x1="21" y1="12" x2="11" y2="12"/><line x1="21" y1="6" x2="11" y2="6"/><line x1="21" y1="18" x2="11" y2="18"/>`
+  },
+  {
+    name: 'infinite',
+    svg: `<path d="M18.19 7.53a6 6 0 0 0-8.38 0L5.4 12l4.41 4.47a6 6 0 1 0 8.38-8.47l-4.41 4.47-4.41-4.47a6 6 0 1 0-8.38 8.47L9.81 12l-4.41-4.47a6 6 0 0 0 8.38 0"/>`
+  },
+  {
+    name: 'info',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <line x1="12" y1="16" x2="12" y2="12"/>
+  <line x1="12" y1="8" x2="12.01" y2="8"/>`
+  },
+  {
+    name: 'instagram',
+    svg: `<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>`
+  },
+  {
+    name: 'italic',
+    svg: `<line x1="19" y1="4" x2="10" y2="4"/><line x1="14" y1="20" x2="5" y2="20"/><line x1="15" y1="4" x2="9" y2="20"/>`
+  },
+  {
+    name: 'key',
+    svg: `<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>`
+  },
+  {
+    name: 'lamp',
+    svg: `<path d="M12 2v2"/><path d="M5 22h14"/><path d="M12 4a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8z"/><path d="M9 16h6v6H9z"/>`
+  },
+  {
+    name: 'languages',
+    svg: `<path d="M5 15h14"/><path d="M2 3h20v18H2z"/><path d="M7 8l5 5 5-5"/>`
+  },
+  {
+    name: 'laptop',
+    svg: `<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M2 20h20"/>`
+  },
+  {
+    name: 'layers',
+    svg: `<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>`
+  },
+  {
+    name: 'layout-list',
+    svg: `<rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="16" x2="21" y2="16"/><line x1="8" y1="4" x2="8" y2="20"/>`
+  },
+  {
+    name: 'leaf',
+    svg: `<path d="M11 20a10 10 0 0 1 10-10V2h-8a10 10 0 0 1-10 10c0 4.42 3.58 8 8 8z"/><line x1="2" y1="22" x2="12" y2="12"/>`
+  },
+  {
+    name: 'library',
+    svg: `<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="11" y1="3" x2="11" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/>`
+  },
+  {
+    name: 'lightbulb',
+    svg: `<path d="M9 21h6"/><path d="M9 18h6"/><path d="M10 15c-3.37 0-6-2.63-6-6s2.63-6 6-6 6 2.63 6 6-2.63 6-6 6z"/><path d="M10 15v3"/><path d="M14 15v3"/>`
+  },
+  {
+    name: 'line-chart',
+    svg: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`
+  },
+  {
+    name: 'link',
+    svg: `<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>`
+  },
+  {
+    name: 'linkedin',
+    svg: `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>`
+  },
+  {
+    name: 'list',
+    svg: `<line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>`
+  },
+  {
+    name: 'loader',
+    svg: `<line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>`
+  },
+  {
+    name: 'locate',
+    svg: `<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>`
+  },
+  {
+    name: 'lock',
+    svg: `<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>`
+  },
+  {
+    name: 'log-in',
+    svg: `<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+  <polyline points="10 17 15 12 10 7"/>
+  <line x1="15" y1="12" x2="3" y2="12"/>`
+  },
+  {
+    name: 'log-out',
+    svg: `<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+  <polyline points="16 17 21 12 16 7"/>
+  <line x1="21" y1="12" x2="9" y2="12"/>`
+  },
+  {
+    name: 'luggage',
+    svg: `<rect x="6" y="7" width="12" height="13" rx="2"/><path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/><line x1="6" y1="11" x2="18" y2="11"/><line x1="6" y1="16" x2="18" y2="16"/><circle cx="8" cy="21" r="1"/><circle cx="16" cy="21" r="1"/>`
+  },
+  {
+    name: 'magnet',
+    svg: `<path d="M3 7v6a9 9 0 0 0 18 0V7"/><path d="M3 3v4h6V3"/><path d="M15 3v4h6V3"/>`
+  },
+  {
+    name: 'mail',
+    svg: `<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22 6 12 13 2 6"/>`
+  },
+  {
+    name: 'map-pin',
+    svg: `<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+  <circle cx="12" cy="10" r="3"/>`
+  },
+  {
+    name: 'maximize',
+    svg: `<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>`
+  },
+  {
+    name: 'medal',
+    svg: `<path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.11"/>`
+  },
+  {
+    name: 'medal-star',
+    svg: `<path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.11"/><polygon points="12 6 13.5 9 16.5 9.5 14.5 11.5 15 14.5 12 13 9 14.5 9.5 11.5 7.5 9.5 10.5 9"/>`
+  },
+  {
+    name: 'megaphone',
+    svg: `<path d="M18 8a3 3 0 0 1 0 6"/><path d="M10 8h4l4-5v18l-4-5h-4l-6-4 6-4z"/><path d="M12 17v4"/>`
+  },
+  {
+    name: 'menu',
+    svg: `<line x1="3" y1="7" x2="21" y2="7"/>
+  <line x1="3" y1="12" x2="21" y2="12"/>
+  <line x1="3" y1="17" x2="21" y2="17"/>`
+  },
+  {
+    name: 'message-circle',
+    svg: `<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>`
+  },
+  {
+    name: 'mic-off',
+    svg: `<line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="22"/>`
+  },
+  {
+    name: 'microphone',
+    svg: `<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+  <line x1="12" y1="19" x2="12" y2="23"/>
+  <line x1="8" y1="23" x2="16" y2="23"/>`
+  },
+  {
+    name: 'microscope',
+    svg: `<path d="M6 18h8"/><path d="M3 22h18"/><path d="M12 6a4 4 0 1 0 0 8"/><path d="M12 2v4"/><path x="12" y="14l-2 4"/><path x="12" y="14l2 4"/>`
+  },
+  {
+    name: 'minimize',
+    svg: `<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>`
+  },
+  {
+    name: 'minus',
+    svg: `<line x1="5" y1="12" x2="19" y2="12"/>`
+  },
+  {
+    name: 'monitor',
+    svg: `<rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+  <line x1="8" y1="21" x2="16" y2="21"/>
+  <line x1="12" y1="17" x2="12" y2="21"/>`
+  },
+  {
+    name: 'moon',
+    svg: `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>`
+  },
+  {
+    name: 'more-horizontal',
+    svg: `<circle cx="5" cy="12" r="1"/>
+  <circle cx="12" cy="12" r="1"/>
+  <circle cx="19" cy="12" r="1"/>`
+  },
+  {
+    name: 'more-vertical',
+    svg: `<circle cx="12" cy="5" r="1"/>
+  <circle cx="12" cy="12" r="1"/>
+  <circle cx="12" cy="19" r="1"/>`
+  },
+  {
+    name: 'mouse',
+    svg: `<rect x="7" y="2" width="10" height="20" rx="5"/><path d="M12 2v6"/><path d="M7 8h10"/>`
+  },
+  {
+    name: 'move',
+    svg: `<polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/>`
+  },
+  {
+    name: 'music',
+    svg: `<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>`
+  },
+  {
+    name: 'navigation',
+    svg: `<polygon points="3 11 22 2 13 21 11 13 3 11"/>`
+  },
+  {
+    name: 'newspaper',
+    svg: `<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/>`
+  },
+  {
+    name: 'notification-off',
+    svg: `<path d="M13.73 21a2 2 0 0 1-3.46 0"/><path d="M18.63 13A17.89 17.89 0 0 1 18 8"/><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"/><line x1="1" y1="1" x2="23" y2="23"/>`
+  },
+  {
+    name: 'paintbrush',
+    svg: `<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>`
+  },
+  {
+    name: 'palette',
+    svg: `<circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10c1.1 0 2-.9 2-2 0-.49-.18-.94-.48-1.3-.3-.36-.52-.84-.52-1.37 0-1.1.9-2 2-2h2.82c2.19 0 3.79-1.81 3.79-4 0-4.97-4.25-9-9.5-9z"/>`
+  },
+  {
+    name: 'paperclip',
+    svg: `<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>`
+  },
+  {
+    name: 'parking',
+    svg: `<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 16V8h4a2 2 0 0 1 0 4H9"/>`
+  },
+  {
+    name: 'party-popper',
+    svg: `<path d="M4 22L9 17"/><path d="M12 14l9-9"/><path d="M15 4l1 1"/><path d="M19 8l1 1"/><path d="M17 2l1 1"/><path d="M21 6l1 1"/><path d="M8 12l1 1"/>`
+  },
+  {
+    name: 'pause',
+    svg: `<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>`
+  },
+  {
+    name: 'peace',
+    svg: `<circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="12" y1="12" x2="5" y2="19"/><line x1="12" y1="12" x2="19" y2="19"/>`
+  },
+  {
+    name: 'pen-tool',
+    svg: `<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>`
+  },
+  {
+    name: 'pencil',
+    svg: `<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>`
+  },
+  {
+    name: 'percent',
+    svg: `<line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>`
+  },
+  {
+    name: 'phone',
+    svg: `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.33 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`
+  },
+  {
+    name: 'phone-call',
+    svg: `<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.33 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`
+  },
+  {
+    name: 'picture-in-picture',
+    svg: `<path d="M8 4.5v5h5"/><path d="M2 12V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3"/>`
+  },
+  {
+    name: 'pin',
+    svg: `<path d="M12 17V7"/><path d="M15 7H9"/><path d="M12 17l-3 3"/><path d="M12 17l3 3"/>`
+  },
+  {
+    name: 'plane-landing',
+    svg: `<path d="M2 22h20"/><path d="M19.8 7L13 14l-4-4-5 5-2-2 7-7 4 4 6.8-6.8z"/>`
+  },
+  {
+    name: 'plane-takeoff',
+    svg: `<path d="M2 22h20"/><path d="M2 11l7-7 4 4 7-7 2 2-5 5 4 4-6.8 6.8z"/>`
+  },
+  {
+    name: 'play',
+    svg: `<polygon points="5 3 19 12 5 21 5 3"/>`
+  },
+  {
+    name: 'plus',
+    svg: `<line x1="12" y1="5" x2="12" y2="19"/>
+  <line x1="5" y1="12" x2="19" y2="12"/>`
+  },
+  {
+    name: 'podcast',
+    svg: `<circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 1 0-8.48 0"/><path d="M19.07 4.93a10 10 0 1 0-14.14 0"/><path d="M12 18v4"/><path d="M8 22h8"/>`
+  },
+  {
+    name: 'power',
+    svg: `<path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/>`
+  },
+  {
+    name: 'presentation',
+    svg: `<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="21" x2="22" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>`
+  },
+  {
+    name: 'printer',
+    svg: `<polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>`
+  },
+  {
+    name: 'pull-request',
+    svg: `<circle cx="18" cy="18" r="3"/>
+  <circle cx="6" cy="6" r="3"/>
+  <path d="M13 6h3a2 2 0 0 1 2 2v7"/>
+  <line x1="6" y1="9" x2="6" y2="21"/>`
+  },
+  {
+    name: 'quote',
+    svg: `<path d="M3 21c3 0 7-1 7-8V5H2v8h5c0 2-2 3-4 3z"/><path d="M15 21c3 0 7-1 7-8V5h-8v8h5c0 2-2 3-4 3z"/>`
+  },
+  {
+    name: 'radio',
+    svg: `<circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 1 0-8.48 0"/><path d="M19.07 4.93a10 10 0 1 0-14.14 0"/><line x1="12" y1="16" x2="12" y2="22"/>`
+  },
+  {
+    name: 'receipt',
+    svg: `<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/>`
+  },
+  {
+    name: 'redo',
+    svg: `<polyline points="19 11 22 14 19 17"/><path d="M22 14h-8a6 6 0 1 0 0 12h4"/>`
+  },
+  {
+    name: 'refresh',
+    svg: `<polyline points="23 4 23 10 17 10"/>
+  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>`
+  },
+  {
+    name: 'repeat',
+    svg: `<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>`
+  },
+  {
+    name: 'rewind',
+    svg: `<polygon points="11 19 2 12 11 5 11 19"/><polygon points="22 19 13 12 22 5 22 19"/>`
+  },
+  {
+    name: 'rock-on',
+    svg: `<path d="M18 10V4a2 2 0 0 0-4 0v6M10 10V2a2 2 0 0 0-4 0v8M2 13V9a2 2 0 0 0-4 0v10a7 7 0 0 0 14 0v-4"/><path d="M18 15a2 2 0 0 0 4 0v-5a2 2 0 0 0-4 0v5z"/><path d="M10 10v4M14 10v4"/>`
+  },
+  {
+    name: 'rocket',
+    svg: `<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>`
+  },
+  {
+    name: 'rss',
+    svg: `<path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>`
+  },
+  {
+    name: 'ruler',
+    svg: `<path d="M21.3 8.11l-13.2 13.2a1.5 1.5 0 0 1-2.12 0l-4.24-4.24a1.5 1.5 0 0 1 0-2.12L14.94 1.76a1.5 1.5 0 0 1 2.12 0l4.24 4.24a1.5 1.5 0 0 1 0 2.12z"/><line x1="14.94" y1="1.76" x2="21.3" y2="8.11"/><line x1="12.12" y1="4.58" x2="14.24" y2="6.7"/><line x1="9.29" y1="7.41" x2="11.41" y2="9.53"/><line x1="6.46" y1="10.24" x2="8.58" y2="12.36"/><line x1="3.63" y1="13.07" x2="5.75" y2="15.19"/>`
+  },
+  {
+    name: 'school',
+    svg: `<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/>`
+  },
+  {
+    name: 'scissors',
+    svg: `<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>`
+  },
+  {
+    name: 'screen-share',
+    svg: `<path d="M13 3H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9"/><polyline points="13 8 17 4 21 8"/><line x1="17" y1="4" x2="17" y2="16"/>`
+  },
+  {
+    name: 'search',
+    svg: `<circle cx="11" cy="11" r="7"/>
+  <line x1="16.5" y1="16.5" x2="21" y2="21"/>`
+  },
+  {
+    name: 'send',
+    svg: `<line x1="22" y1="2" x2="11" y2="13"/>
+  <polygon points="22 2 15 22 11 13 2 9 22 2"/>`
+  },
+  {
+    name: 'send-horizontal',
+    svg: `<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>`
+  },
+  {
+    name: 'send-vertical',
+    svg: `<line x1="12" y1="2" x2="12" y2="15"/><polyline points="17 8 12 3 7 8"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>`
+  },
+  {
+    name: 'server',
+    svg: `<rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+  <line x1="6" y1="6" x2="6.01" y2="6"/>
+  <line x1="6" y1="18" x2="6.01" y2="18"/>`
+  },
+  {
+    name: 'settings',
+    svg: `<circle cx="12" cy="12" r="3"/>
+  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>`
+  },
+  {
+    name: 'share',
+    svg: `<circle cx="18" cy="5" r="3"/>
+  <circle cx="6" cy="12" r="3"/>
+  <circle cx="18" cy="19" r="3"/>
+  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>`
+  },
+  {
+    name: 'shield',
+    svg: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`
+  },
+  {
+    name: 'shield-alert',
+    svg: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>`
+  },
+  {
+    name: 'shield-check',
+    svg: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>`
+  },
+  {
+    name: 'shopping-cart',
+    svg: `<circle cx="9" cy="21" r="1"/>
+  <circle cx="20" cy="21" r="1"/>
+  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>`
+  },
+  {
+    name: 'shrink',
+    svg: `<polyline points="15 3 15 9 21 9"/><polyline points="9 21 9 15 3 15"/><line x1="15" y1="9" x2="21" y2="3"/><line x1="9" y1="15" x2="3" y2="21"/>`
+  },
+  {
+    name: 'shuffle',
+    svg: `<polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/>`
+  },
+  {
+    name: 'signal',
+    svg: `<line x1="2" y1="20" x2="2" y2="20"/><line x1="7" y1="20" x2="7" y2="16"/><line x1="12" y1="20" x2="12" y2="12"/><line x1="17" y1="20" x2="17" y2="8"/><line x1="22" y1="20" x2="22" y2="4"/>`
+  },
+  {
+    name: 'siren',
+    svg: `<path d="M7 18v-6a5 5 0 1 1 10 0v6"/><rect x="5" y="18" width="14" height="4" rx="1"/><line x1="12" y1="12" x2="12" y2="12"/>`
+  },
+  {
+    name: 'skip-back',
+    svg: `<polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/>`
+  },
+  {
+    name: 'skip-forward',
+    svg: `<polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/>`
+  },
+  {
+    name: 'sliders',
+    svg: `<line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="2" y1="14" x2="6" y2="14"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="18" y1="16" x2="22" y2="16"/>`
+  },
+  {
+    name: 'smartphone',
+    svg: `<rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+  <line x1="12" y1="18" x2="12.01" y2="18"/>`
+  },
+  {
+    name: 'smile',
+    svg: `<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>`
+  },
+  {
+    name: 'speaker',
+    svg: `<rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><circle cx="12" cy="14" r="4"/><line x1="12" y1="6" x2="12.01" y2="6"/>`
+  },
+  {
+    name: 'star',
+    svg: `<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>`
+  },
+  {
+    name: 'sticky-note',
+    svg: `<path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>`
+  },
+  {
+    name: 'stop',
+    svg: `<rect x="4" y="4" width="16" height="16"/>`
+  },
+  {
+    name: 'stopwatch',
+    svg: `<circle cx="12" cy="14" r="8"/><path d="M12 9v5l2 2"/><path d="M12 2v2"/><path d="M10 2h4"/>`
+  },
+  {
+    name: 'store',
+    svg: `<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/>`
+  },
+  {
+    name: 'student',
+    svg: `<path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="10" cy="7" r="4"/>
+  <path d="M14 6l5-3 5 3-5 3-5-3z"/>
+  <path d="M19 6v5"/>`
+  },
+  {
+    name: 'suitcase',
+    svg: `<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/>`
+  },
+  {
+    name: 'sun',
+    svg: `<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>`
+  },
+  {
+    name: 'sword',
+    svg: `<path d="M14.5 17.5L3 5l2-2 12.5 11.5"/><path d="M13 13l4 4"/><path d="M19 19l2 2"/><path d="M17 21l4-4"/>`
+  },
+  {
+    name: 'table',
+    svg: `<path d="M3 3h18v18H3z"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/>`
+  },
+  {
+    name: 'tablet-smartphone',
+    svg: `<rect x="2" y="3" width="14" height="18" rx="2"/><rect x="16" y="8" width="6" height="10" rx="1"/><line x1="9" y1="18" x2="9.01" y2="18"/><line x1="19" y1="15" x2="19.01" y2="15"/>`
+  },
+  {
+    name: 'tag',
+    svg: `<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>`
+  },
+  {
+    name: 'tags',
+    svg: `<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 20l7-7"/><line x1="7" y1="7" x2="7.01" y2="7"/>`
+  },
+  {
+    name: 'target',
+    svg: `<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>`
+  },
+  {
+    name: 'terminal',
+    svg: `<rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+  <line x1="4" y1="8" x2="6" y2="10"/>
+  <line x1="6" y1="10" x2="4" y2="12"/>
+  <line x1="8" y1="14" x2="12" y2="14"/>`
+  },
+  {
+    name: 'thumbs-down',
+    svg: `<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"/>`
+  },
+  {
+    name: 'thumbs-up',
+    svg: `<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>`
+  },
+  {
+    name: 'timer',
+    svg: `<circle cx="12" cy="14" r="8"/><path d="M12 9v5l2 2"/><path d="M12 2v2"/><path d="M12 2h4"/>`
+  },
+  {
+    name: 'train',
+    svg: `<rect x="4" y="4" width="16" height="12" rx="2"/><line x1="7" y1="20" x2="9" y2="16"/><line x1="17" y1="20" x2="15" y2="16"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/>`
+  },
+  {
+    name: 'trash',
+    svg: `<polyline points="3 6 5 6 21 6"/>
+  <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+  <path d="M10 11v6"/>
+  <path d="M14 11v6"/>
+  <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>`
+  },
+  {
+    name: 'trending-down',
+    svg: `<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/>`
+  },
+  {
+    name: 'trending-up',
+    svg: `<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>`
+  },
+  {
+    name: 'trophy',
+    svg: `<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.34"/><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"/>`
+  },
+  {
+    name: 'truck',
+    svg: `<rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>`
+  },
+  {
+    name: 'tv',
+    svg: `<rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/>`
+  },
+  {
+    name: 'twitter',
+    svg: `<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>`
+  },
+  {
+    name: 'type',
+    svg: `<polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/>`
+  },
+  {
+    name: 'umbrella',
+    svg: `<path d="M23 12a11.02 11.02 0 0 0-22 0"/><path d="M12 12v8a2 2 0 0 0 4 0"/>`
+  },
+  {
+    name: 'underline',
+    svg: `<path d="M6 3v7a6 6 0 0 0 12 0V3"/><line x1="4" y1="21" x2="20" y2="21"/>`
+  },
+  {
+    name: 'undo',
+    svg: `<polyline points="5 11 2 14 5 17"/><path d="M2 14h8a6 6 0 1 1 0 12h-4"/>`
+  },
+  {
+    name: 'university',
+    svg: `<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/>`
+  },
+  {
+    name: 'unlink',
+    svg: `<path d="M18.84 8.46l-4.59 4.59c-1.27 1.27-3.33 1.27-4.6 0a3.25 3.25 0 0 1 0-4.59l1.24-1.24"/><path d="M5.16 15.54l4.59-4.59c1.27-1.27 3.33-1.27 4.6 0a3.25 3.25 0 0 1 0 4.59l-1.24 1.24"/><line x1="9" y1="9" x2="15" y2="15"/>`
+  },
+  {
+    name: 'unlock',
+    svg: `<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+  <path d="M7 11V7a5 5 0 0 1 9.9-1"/>`
+  },
+  {
+    name: 'upload',
+    svg: `<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+  <polyline points="17 8 12 3 7 8"/>
+  <line x1="12" y1="3" x2="12" y2="15"/>`
+  },
+  {
+    name: 'user',
+    svg: `<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4"/>`
+  },
+  {
+    name: 'user-check',
+    svg: `<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/>`
+  },
+  {
+    name: 'user-circle',
+    svg: `<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4"/>
+  <circle cx="12" cy="12" r="10"/>`
+  },
+  {
+    name: 'user-minus',
+    svg: `<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/>`
+  },
+  {
+    name: 'user-plus',
+    svg: `<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>`
+  },
+  {
+    name: 'user-x',
+    svg: `<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/>`
+  },
+  {
+    name: 'users',
+    svg: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+  <circle cx="9" cy="7" r="4"/>
+  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>`
+  },
+  {
+    name: 'utensils',
+    svg: `<path d="M3 2v7c0 1.1.9 2 2 2h4V2"/>
+  <line x1="7" y1="2" x2="7" y2="8"/>
+  <path d="M6 11v11"/>
+  <path d="M15 15v7"/>
+  <path d="M15 15a3 3 0 0 1 6 0v-13h-6v13z"/>`
+  },
+  {
+    name: 'verified',
+    svg: `<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><polyline points="9 12 11 14 15 10"/>`
+  },
+  {
+    name: 'vibration',
+    svg: `<path d="M2 8l2 2-2 2 2 2-2 2"/><path d="M22 8l-2 2 2 2-2 2 2 2"/><rect x="8" y="3" width="8" height="18" rx="2"/>`
+  },
+  {
+    name: 'video',
+    svg: `<polygon points="23 7 16 12 23 17 23 7"/>
+  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>`
+  },
+  {
+    name: 'volume-2',
+    svg: `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>`
+  },
+  {
+    name: 'volume-x',
+    svg: `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>`
+  },
+  {
+    name: 'wallet',
+    svg: `<path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><rect x="14" y="11" width="8" height="6" rx="2"/>`
+  },
+  {
+    name: 'wallet-cards',
+    svg: `<rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><path d="M7 15h.01M11 15h.01"/>`
+  },
+  {
+    name: 'watch',
+    svg: `<circle cx="12" cy="12" r="7"/><polyline points="12 9 12 12 13.5 13.5"/><path d="M16.51 7.49l2-2"/><path d="M7.49 16.51l-2 2"/><path d="M7.49 7.49l-2-2"/><path d="M16.51 16.51l2 2"/>`
+  },
+  {
+    name: 'waveform',
+    svg: `<path d="M2 10v4"/><path d="M6 4v16"/><path d="M10 8v8"/><path d="M14 6v12"/><path d="M18 2v20"/><path d="M22 10v4"/>`
+  },
+  {
+    name: 'webhooks',
+    svg: `<circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="3"/><circle cx="5" cy="5" r="3"/><circle cx="19" cy="19" r="3"/><circle cx="5" cy="19" r="3"/><line x1="7.12" y1="7.12" x2="9.88" y2="9.88"/><line x1="14.12" y1="14.12" x2="16.88" y2="16.88"/><line x1="7.12" y1="16.88" x2="9.88" y2="14.12"/><line x1="14.12" y1="9.88" x2="16.88" y2="7.12"/>`
+  },
+  {
+    name: 'whole-word',
+    svg: `<circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><line x1="10" y1="12" x2="14" y2="12"/>`
+  },
+  {
+    name: 'wifi',
+    svg: `<path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/>`
+  },
+  {
+    name: 'wrap-text',
+    svg: `<polyline points="3 6 15 6 15 18 3 18"/><polyline points="7 14 3 18 7 22"/><line x1="21" y1="6" x2="19" y2="6"/><line x1="21" y1="12" x2="19" y2="12"/><line x1="21" y1="18" x2="19" y2="18"/>`
+  },
+  {
+    name: 'wrench',
+    svg: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"/>`
+  },
+  {
+    name: 'wrench-screwdriver',
+    svg: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"/><path d="M5 2l3 3-3 3"/><line x1="2" y1="5" x2="5" y2="5"/>`
+  },
+  {
+    name: 'x',
+    svg: `<line x1="18" y1="6" x2="6" y2="18"/>
+  <line x1="6" y1="6" x2="18" y2="18"/>`
+  },
+  {
+    name: 'x-circle',
+    svg: `<circle cx="12" cy="12" r="10"/>
+  <line x1="15" y1="9" x2="9" y2="15"/>
+  <line x1="9" y1="9" x2="15" y2="15"/>`
+  },
+  {
+    name: 'youtube',
+    svg: `<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>`
+  },
+  {
+    name: 'zap',
+    svg: `<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>`
+  },
+  {
+    name: 'zoom-in',
+    svg: `<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>`
+  },
+  {
+    name: 'zoom-out',
+    svg: `<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/>`
+  }
+];
         const iconGrid = document.getElementById('icon-grid');
         const searchInput = document.getElementById('search-input');
         const toastContainer = document.getElementById('toast-container');
+
+        const wrapSvg = (content, className = '') => `
+            <svg class="${className}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                ${content}
+            </svg>
+        `;
+
         function renderIcons(data) {
             iconGrid.innerHTML = '';
             data.forEach(icon => {
@@ -80,17 +1861,18 @@
                 card.className = 'icon-card glass rounded-2xl p-6 flex flex-col items-center justify-center gap-4 cursor-pointer transition-all duration-300 group';
                 card.innerHTML = `
                     <div class="text-gray-400 group-hover:text-blue-400 transition-colors w-10 h-10">
-                        ${icon.svg.replace('<svg', '<svg class="w-full h-full"')}
+                        ${wrapSvg(icon.svg, 'w-full h-full')}
                     </div>
                     <span class="text-xs font-medium text-gray-500 group-hover:text-gray-200 transition-colors capitalize">${icon.name.replace(/-/g, ' ')}</span>
                 `;
-                card.addEventListener('click', () => copyToClipboard(icon.svg, icon.name));
+                card.addEventListener('click', () => copyToClipboard(wrapSvg(icon.svg), icon.name));
                 iconGrid.appendChild(card);
             });
         }
+
         async function copyToClipboard(svg, name) {
             try {
-                await navigator.clipboard.writeText(svg);
+                await navigator.clipboard.writeText(svg.trim());
                 showToast(`Copied ${name.replace(/-/g, ' ')} SVG!`);
             } catch (err) { console.error('Failed to copy: ', err); }
         }
@@ -109,4 +1891,5 @@
         renderIcons(iconData);
     </script>
 </body>
+
 </html>
